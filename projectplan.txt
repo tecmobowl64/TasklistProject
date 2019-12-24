@@ -1,0 +1,17 @@
+Project Name: DoIt!
+Project Scope: To-do list application
+
+* The purpose of this project is to create a minimalist to-do list application using Python and SQL.
+* Generally, the project will comprise of two parts:
+    * SQL: Schema, database, table management
+    * Python: Mechanism for the application which makes calls to the SQL database
+
+Resources and Documentation:
+SQL: schema.txt, sqlqueries.txt, todo.db
+
+Python: DoIt.py, dbtest.py
+
+Notes 12/22/2019
+
+I just completed a function that allows the completionStatus of a task to be updated to 1 (TRUE or complete).
+

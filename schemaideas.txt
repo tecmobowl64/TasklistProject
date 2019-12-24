@@ -1,0 +1,29 @@
+Schema for Task List
+
+* Schema is to have two tables initially:
+    * Lists
+    * Tasks
+
+This database will be constructed in SQLite3.
+
+Database name:
+
+Tables:
+
+Lists
+listId (Pk) INT
+listName VARCHAR 255
+
+Tasks
+taskId (Pk) INT
+listId (Fk) INT
+description VARCHAR 255
+priority CHAR(1)
+category1 VARCHAR 255
+category2 VARCHAR 255
+dueDate DATETIME
+completionStatus TINYINT(1)
+
+# Category 1 is the primary category of task (ie. Home, Work, etc.)
+# Category 2 is a subcategory of Category 1 (ie. Cooking, cleaning, Linux projects, etc.)
+# completionStatus is Y or N
