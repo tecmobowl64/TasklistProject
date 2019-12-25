@@ -27,3 +27,5 @@ completionStatus TINYINT(1)
 # Category 1 is the primary category of task (ie. Home, Work, etc.)
 # Category 2 is a subcategory of Category 1 (ie. Cooking, cleaning, Linux projects, etc.)
 # completionStatus is Y or N
+
+Additional table will be required for completed tasks. Tasks marked with completionStatus of 1 will be DROPPED from the tasks table, then added to this new table (completedTasks).
