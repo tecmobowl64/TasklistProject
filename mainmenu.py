@@ -6,12 +6,12 @@ def main():
         print("DoIt! Main Menu")
         #time.sleep(1)
         print("********************")
-
-        print("A: View All Incomplete Tasks")
-        print("B: Add a New Task")
-        print("C: Complete a Task")
-        print("D: View All Completed Tasks")
-        print("Q: Quit/Log Out")
+        msg = "A: View All Incomplete Tasks\n"
+        msg += "B: Add a New Task\n"
+        msg += "C: Complete a Task\n"
+        msg += "D: View all Completed Tasks\n"
+        msg += "Q: Quit/Log Out\n"
+        print(msg)
         print("********************")
         choice = input("Please enter your choice: ")
 
