@@ -16,7 +16,7 @@ def main():
         choice = input("Please enter your choice: ")
 
         if choice == "A" or choice =="a":
-            print(tasklist.get_all_tasks())
+            print(tasklist.get_incomplete_tasks())
             menu()
         elif choice == "B" or choice =="b":
             tasklist.addTask()

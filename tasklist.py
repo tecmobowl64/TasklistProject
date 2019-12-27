@@ -11,8 +11,8 @@ def create_connection(db_file):
         print(e)
     return None
 
-# Function to select all tasks
-def get_all_tasks():
+# Function to select incomplete tasks
+def get_incomplete_tasks():
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     db_file = os.path.join(BASE_DIR, "todo.db")
     conn = create_connection(db_file)
