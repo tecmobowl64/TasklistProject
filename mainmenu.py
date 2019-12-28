@@ -16,7 +16,8 @@ def main():
         choice = input("Please enter your choice: ")
 
         if choice == "A" or choice =="a":
-            print(tasklist.get_incomplete_tasks())
+            inctask = tasklist.get_incomplete_tasks()
+            # print(inctask)
             menu()
         elif choice == "B" or choice =="b":
             tasklist.addTask()
@@ -25,7 +26,8 @@ def main():
             tasklist.markComplete()
             menu()
         elif choice == "D" or choice =="d":
-            print(tasklist.get_completed_tasks())
+            comptask = tasklist.get_completed_tasks()
+            # print(comptask)
             menu()
         elif choice=="Q" or choice=="q":
             sys.exit
